@@ -11,16 +11,16 @@
     <form action="#">
         <div>
             <label for="cipher-key">Clef</label>
-            <input type="number" min="1" max="25" class="cipher-key" id="cipher-key">
+            <input type="number" min="1" max="25" class="cipher-key" id="cipher-key" data-cy="cipher-key">
         </div>
         <div>
             <label for="cipher-message">Message</label>
-            <textarea class="cipher-message" id="cipher-message" placeholder="Votre message..."></textarea>
+            <textarea class="cipher-message" id="cipher-message" placeholder="Votre message..." data-cy="cipher-message"></textarea>
         </div>
-        <button type="button">Cipher</button>
+        <button type="button" data-cy="cipher-button">Cipher</button>
     </form>
 
-    <p id="result"></p>
+    <p id="result" data-cy="cipher-result"></p>
 
 
     <script src="caesar.js"></script>

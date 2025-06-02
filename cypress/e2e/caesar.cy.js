@@ -6,9 +6,9 @@ describe('Caesar cipher', () => {
     })
 
     it('p should have text Hello World!', () => {
-        cy.get('#cipher-key').type(6)
-        cy.get('#cipher-message').type("Hello World!")
-        cy.get('button[type="button"]').click()
-        cy.get('p#result').should('have.text', 'Nkrru Cuxrj!')
+        cy.dataCy('cipher-key').type(6)
+        cy.dataCy('cipher-message').type("Hello World!")
+        cy.dataCy('cipher-button').click()
+        cy.dataCy('cipher-result').should('have.text', 'Nkrru Cuxrj!')
     })
 })
