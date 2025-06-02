@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiffre de César</title>
+</head>
+<body>
+    <h1>Caesar</h1>
+
+    <form action="#">
+        <div>
+            <label for="cipher-key">Clef</label>
+            <input type="number" min="1" max="25" class="cipher-key" id="cipher-key">
+        </div>
+        <div>
+            <label for="cipher-message">Message</label>
+            <textarea class="cipher-message" id="cipher-message" placeholder="Votre message..."></textarea>
+        </div>
+        <button type="button">Cipher</button>
+    </form>
+
+    <p id="result"></p>
+
+
+    <script src="caesar.js"></script>
+</body>
+</html>
