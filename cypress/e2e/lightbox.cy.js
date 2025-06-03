@@ -159,7 +159,5 @@ describe('test: lightbox.html', () => {
 
         // Delete Comment 2
         cy.dataCy('delete-comment-svg-1').click();
-
-        
     });
 })
